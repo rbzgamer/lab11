@@ -1,16 +1,16 @@
 #include<iostream>
 using namespace std;
 
-int fibonacci(int);
+long long int fibonacci(long long int);
 
 int main(){
-    int x;
+    long long int x;
     cin >> x;
     cout << fibonacci(x);
     return 0; 
 }
 
-int fibonacci(int n){
+long long int fibonacci(long long int n){
     if(n == 1) return 1;
     if(n == 0) return 0;
     return fibonacci(n-1) + fibonacci(n-2);
